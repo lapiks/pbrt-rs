@@ -5,3 +5,7 @@ edition = "2021"
 
 [dependencies]
 glam = "0.30.4"
+
+[[bin]]
+name = "pbrt-rs"
+path = "src/cmd/main.rs"
