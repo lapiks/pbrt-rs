@@ -22,12 +22,12 @@ impl BaseIntegrator {
         Self { aggregate, lights, infinite_lights }
     }
 
-    fn intersect(&self, ray: &Ray, tmax: f32) -> Option<ShapeIntersection> {
-        todo!()
+    fn intersect(&self, ray: &Ray, tmax: f64) -> Option<ShapeIntersection> {
+        self.aggregate.intersect(ray, tmax)
     }
 
-    fn intersect_p(&self, ray: &Ray, tmax: f32) -> bool {
-        todo!()
+    fn intersect_p(&self, ray: &Ray, tmax: f64) -> bool {
+        self.aggregate.intersect_p(ray, tmax)
     }
 }
 
